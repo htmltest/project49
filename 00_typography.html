@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Периодика</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Open+Sans+Condensed:300&subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen-1.4.2/chosen.css" />
+        <link rel="stylesheet" href="js/nouislider-8.2.1/nouislider.css" />
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/chosen-1.4.2/chosen.jquery.min.js"></script>
+        <script src="js/nouislider-8.2.1/nouislider.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- top -->
+        <div class="top">
+            <div class="top-inner">
+                <div>
+                    <img src="images/top-phone.png" alt="" width="23" height="23" />
+                    8 800 250-07-08
+                </div>
+                <a href="#">
+                    <img src="images/top-callback.png" alt="" width="20" height="23" />
+                    Обратный звонок
+                </a>
+                <a href="#">
+                    <img src="images/top-feedback.png" alt="" width="28" height="28" />
+                    Обратная связь
+                </a>
+                <a href="#">
+                    <img src="images/top-history.png" alt="" width="24" height="24" />
+                    История
+                </a>
+                <a href="#" class="top-cart">
+                    <img src="images/top-cart.png" alt="" width="26" height="22" />
+                    Корзина –
+                    <span>0</span>
+                    <em>0 &#8381;</em>
+                </a>
+                <a href="#">
+                    <img src="images/top-cabinet.png" alt="" width="26" height="22" />
+                    Личный кабинет
+                </a>
+            </div>
+        </div>
+        <!-- top END -->
+
+        <header>
+            <div class="header-inner">
+                <div class="logo"><a href="#"><img src="images/logo.png" alt="" width="264" height="38" /></a></div>
+                <div class="header-search">
+                    <form action="#" method="post">
+                        <div class="header-search-submit"><input type="submit" value="" /></div>
+                        <div class="header-search-input"><input type="text" name="search" value="" placeholder="поиск по каталогу" /></div>
+                    </form>
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="#">Как заказать</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- menu -->
+        <div class="menu">
+            <div class="menu-categories">
+                <div class="menu-categories-title">Категории</div>
+                <div class="menu-categories-inner">
+                    <ul>
+                        <li><a href="#"><div><img src="images/menu-01.png" alt="" width="40" height="39" /></div><span>Авто / мото</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-02.png" alt="" width="40" height="39" /></div><span>Архитектура. Дом. Интерьер. Дизайн</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-03.png" alt="" width="40" height="39" /></div><span>Бизнес. Финансы. Политика</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-04.png" alt="" width="40" height="39" /></div><span>Дача. Сад. Огород. Цветоводство</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-05.png" alt="" width="40" height="39" /></div><span>Детские журналы</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><div><img src="images/menu-06.png" alt="" width="40" height="39" /></div><span>Женские журналы. Кулинария</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-07.png" alt="" width="40" height="39" /></div><span>Здоровье. Беременность</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-08.png" alt="" width="40" height="39" /></div><span>Культура. Искусство</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-09.png" alt="" width="40" height="39" /></div><span>Мода. Стиль жизни. Красота</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-10.png" alt="" width="40" height="39" /></div><span>Мужские журналы</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><div><img src="images/menu-11.png" alt="" width="40" height="39" /></div><span>Научно-популярные и&nbsp;литературно- художественные издания</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-12.png" alt="" width="40" height="39" /></div><span>Подростковые журналы</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-13.png" alt="" width="40" height="39" /></div><span>Развлечения. Досуг</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-14.png" alt="" width="40" height="39" /></div><span>Рукоделие. Креатив</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-15.png" alt="" width="40" height="39" /></div><span>Специализированные журналы</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><div><img src="images/menu-16.png" alt="" width="40" height="39" /></div><span>Спорт</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-17.png" alt="" width="40" height="39" /></div><span>Туризм. Путешествия</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-18.png" alt="" width="40" height="39" /></div><span>Электроника. Компьютеры. Фотография</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-19.png" alt="" width="40" height="39" /></div><span>Партворки</span></a></li>
+                        <li><a href="#"><div><img src="images/menu-20.png" alt="" width="38" height="38" /></div><span>Книжные коллекции</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-who">
+                <ul>
+                    <li><a href="#">Партворки</a></li>
+                    <li class="active"><a href="#">Мужчинам</a></li>
+                    <li><a href="#">Женщинам</a></li>
+                    <li><a href="#">Детям</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- menu END -->
+
+        <!-- content -->
+        <div class="content">
+
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> <span></span>
+                <a href="#">Женские журналы. Кулинария</a> <span></span>
+                Добрые советы – журнал с очень добрыми советами
+            </div>
+
+            <h1>Добрые советы – журнал с очень добрыми советами H1</h1>
+            <p>Танк Т-72, принятый на вооружение в 1973 году, является одной из наиболее выдающихся боевых машин, созданных после Второй мировой войны. Эта машина воплотила в себе лучшие традиции советского танкостроения, заслуженно завоевав любовь и популярность у танкистов многих стран мира. Высокие эксплуатационные и боевые качества, а также удивительная надежность дают возможность поставить Т-72 в один ряд с лучшими отечественными и зарубежными образцами танков. Созданный более трех десятилетий назад, танк Т-72, до сих пор состоит на вооружении многих стран мира.</p>
+            <p>Обсценная идиома притягивает былинный ямб. Однако Л.В.Щерба утверждал, что правило альтернанса просветляет былинный верлибр. Абстрактное высказывание, как бы это ни казалось парадоксальным, притягивает сюжетный холодный цинизм, заметим, каждое стихотворение объединено вокруг основного философского стержня.</p>
+            <p><br /><img src="files/typography.jpg" alt="" width="100%" /></p>
+            <h3>Словесный лирический субъект в XXI веке</h3>
+            <p>Генеративная поэтика доступна. Гекзаметр выбирает диалогический гекзаметр. Абстракционизм, по определению диссонирует цикл. В заключении добавлю, поток сознания сложен. Синхрония, соприкоснувшись в чем-то со своим главным антагонистом в постструктурной поэтике, иллюстрирует гекзаметр. Различное расположение осознаёт орнаментальный сказ.</p>
+            <hr />
+            <h2>H2 - Программа праздника</h2>
+            <p>Программа фестиваля разделена на две части: ночь и день. Ночью с 5 на 6 июля одновременно будут задействованы три сцены и площадки. Ночная музыкальная программа предусматривает полноценные концертные выступления популярных групп и артистов, а также выступления диджеев.</p>
+            <h3>H3 - Жанры</h3>
+            <ul>
+                <li>house</li>
+                <li>techno</li>
+                <li>indie</li>
+                <li>electronica</li>
+                <li>experimental</li>
+            </ul>
+            <p>В воскресенье, 6 июля развернутая дневная программа сделает фестиваль привлекательным в глазах еще более широкой аудитории: воскресный пикник вокруг летней концертной сцены, эко-кафе, зоны для отдыха и всевозможных спортивных развлечений. Дневная музыкальная программа состоит из живых выступлений групп,.</p>
+            <ol>
+                <li>Гибкость в управлении.;</li>
+                <li>Индивидуальный подход к клиенту;</li>
+                <li>Быстрота в принятии решений;</li>
+                <li>Минимум неликвидных активов.</li>
+            </ol>
+            <blockquote>Метаязык притягивает культурный ритмический рисунок. Первое полустишие, по определению непосредственно вызывает верлибр и передается в этом стихотворении Донна метафорическим образом циркуля. Ложная цитата вероятна.</blockquote>
+
+            <!-- product -->
+            <div class="product">
+                <!-- product left -->
+                <div class="product-left">
+                    <div class="product-photo"><img src="files/product.jpg" alt="" /></div>
+
+                    <div class="product-rates">
+                        <div class="product-rating">
+                            <div class="product-rates-title">Рэйтинг</div>
+                            <div class="rating"><div class="rating-1"></div></div>
+                        </div>
+                        <div class="product-social">
+                            <div class="product-rates-title">Поделитесь с друзьями</div>
+                            <div class="product-social-likes">
+                                <script src="//yandex.st/share/share.js"></script>
+                                <span id="ya_share_counter"></span>
+                                <script>
+                                    var yaShareCounter = new Ya.share({
+                                        'element': 'ya_share_counter',
+                                        'elementStyle': {'quickServices':  ['vkontakte', 'facebook', 'twitter', 'odnoklassniki', 'moimir'], 'type': 'small'},
+                                        'theme': 'counter'
+                                     });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-response">
+                        <div class="product-response-link"><a href="#">Отзывы</a></div>
+                        <div class="product-response-text">Стилистическая игра интегрирует брахикаталектический стих. Аллегория интегрирует реципиент, при этом нельзя говорить, что это явления собственно фоники, звукописи. Из приведенных текстуальных фрагментов видно, как коммунальный модернизм интегрирует прозаический эпитет.</div>
+                        <div class="product-response-author"><strong>Василий Петров</strong>, Москва</div>
+                    </div>
+                    <div class="product-response-new"><a href="#">Оставьте свой отзыв</a></div>
+                </div>
+                <!-- product left END -->
+
+                <!-- product right -->
+                <div class="product-right">
+                    <h1>Добрые советы – журнал с очень добрыми советами</h1>
+
+                    <!-- subscribe -->
+                    <div class="subscribe">
+                        <div class="subscribe-tabs">
+                            <ul>
+                                <li class="active"><a href="#">Подписка</a></li>
+                                <li><a href="#">Бронирование</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="subscribe-container">
+                            <!-- subscribe content -->
+                            <div class="subscribe-content active">
+                                <form action="#" method="post">
+                                    <div class="subscribe-inner">
+                                        <div class="subscribe-params">
+                                            <div class="subscribe-start-from">10.2015</div>
+                                            <div class="subscribe-start-to">03.2017</div>
+                                            <div class="subscribe-range-from">11.2015</div>
+                                            <div class="subscribe-range-to">12.2016</div>
+                                        </div>
+                                        <div class="subscribe-monthes"></div>
+                                        <div class="subscribe-slider-wrap">
+                                            <div class="subscribe-slider"></div>
+                                        </div>
+
+                                        <input type="hidden" name="start" value="" />
+                                        <input type="hidden" name="stop" value="" />
+                                        <input type="hidden" name="count" value="1" />
+
+                                        <div class="subscribe-cost">
+                                            <div class="subscribe-cost-text">
+                                                <div class="subscribe-cost-title">Стоимость подписки</div>
+                                                <div class="subscribe-cost-period"></div>
+                                            </div>
+                                            <div class="subscribe-cost-sep">х</div>
+                                            <div class="subscribe-count">
+                                                <div class="subscribe-count-value" contenteditable="true">1</div>
+                                                <div class="subscribe-count-unit">экз.</div>
+                                                <div class="subscribe-count-ctrl">
+                                                    <a href="#" class="subscribe-count-inc"></a>
+                                                    <a href="#" class="subscribe-count-dec"></a>
+                                                </div>
+                                            </div>
+                                            <div class="subscribe-cost-sep">=</div>
+                                            <div class="subscribe-cost-results">
+                                                <div class="subscribe-cost-summ" data-price="180"><span>0</span> &#8381;</div>
+                                                <div class="subscribe-cost-results-count"><span>1</span> номер</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="subscribe-btns">
+                                        <div class="subscribe-submit"><input type="submit" value="Подписаться" class="btn" /></div>
+                                        <div class="subscribe-older"><a href="#" class="btn">Купить вышедшие номера</a></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- subscribe content END -->
+
+                            <!-- subscribe content -->
+                            <div class="subscribe-content">
+                                <form action="#" method="post">
+                                    <div class="subscribe-inner">
+                                        <div class="subscribe-params">
+                                            <div class="subscribe-start-from">12.2015</div>
+                                            <div class="subscribe-start-to">02.2017</div>
+                                            <div class="subscribe-range-from">01.2016</div>
+                                            <div class="subscribe-range-to">12.2016</div>
+                                        </div>
+                                        <div class="subscribe-monthes"></div>
+                                        <div class="subscribe-slider-wrap">
+                                            <div class="subscribe-slider"></div>
+                                        </div>
+
+                                        <input type="hidden" name="start" value="" />
+                                        <input type="hidden" name="stop" value="" />
+                                        <input type="hidden" name="count" value="1" />
+
+                                        <div class="subscribe-cost">
+                                            <div class="subscribe-cost-text">
+                                                <div class="subscribe-cost-title">Стоимость подписки</div>
+                                                <div class="subscribe-cost-period"></div>
+                                            </div>
+                                            <div class="subscribe-cost-sep">х</div>
+                                            <div class="subscribe-count">
+                                                <div class="subscribe-count-value" contenteditable="true">1</div>
+                                                <div class="subscribe-count-unit">экз.</div>
+                                                <div class="subscribe-count-ctrl">
+                                                    <a href="#" class="subscribe-count-inc"></a>
+                                                    <a href="#" class="subscribe-count-dec"></a>
+                                                </div>
+                                            </div>
+                                            <div class="subscribe-cost-sep">=</div>
+                                            <div class="subscribe-cost-results">
+                                                <div class="subscribe-cost-summ" data-price="180"><span>0</span> &#8381;</div>
+                                                <div class="subscribe-cost-results-count"><span>1</span> номер</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="subscribe-btns">
+                                        <div class="subscribe-submit"><input type="submit" value="Подписаться" class="btn" /></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- subscribe content END -->
+                        </div>
+                    </div>
+                    <!-- subscribe END -->
+
+                    <div class="product-info">
+                        <h3>H3 - Об издании</h3>
+                        <p>Танк Т-72, принятый на вооружение в 1973 году, является одной из наиболее выдающихся боевых машин, созданных после Второй мировой войны. Эта машина воплотила в себе лучшие традиции советского танкостроения, заслуженно завоевав любовь и популярность у танкистов многих стран мира. Высокие эксплуатационные и боевые качества, а также удивительная надежность дают возможность поставить Т-72 в один ряд с лучшими отечественными и зарубежными образцами танков. Созданный более трех десятилетий назад, танк Т-72, до сих пор состоит на вооружении многих стран мира.</p>
+                        <div class="product-info-detail">
+                            <p>Танк Т-72, принятый на вооружение в 1973 году, является одной из наиболее выдающихся боевых машин, созданных после Второй мировой войны. Эта машина воплотила в себе лучшие традиции советского танкостроения, заслуженно завоевав любовь и популярность у танкистов многих стран мира. Высокие эксплуатационные и боевые качества, а также удивительная надежность дают возможность поставить Т-72 в один ряд с лучшими отечественными и зарубежными образцами танков. Созданный более трех десятилетий назад, танк Т-72, до сих пор состоит на вооружении многих стран мира.</p>
+                            <p>Танк Т-72, принятый на вооружение в 1973 году, является одной из наиболее выдающихся боевых машин, созданных после Второй мировой войны. Эта машина воплотила в себе лучшие традиции советского танкостроения, заслуженно завоевав любовь и популярность у танкистов многих стран мира. Высокие эксплуатационные и боевые качества, а также удивительная надежность дают возможность поставить Т-72 в один ряд с лучшими отечественными и зарубежными образцами танков. Созданный более трех десятилетий назад, танк Т-72, до сих пор состоит на вооружении многих стран мира.</p>
+                            <p>Танк Т-72, принятый на вооружение в 1973 году, является одной из наиболее выдающихся боевых машин, созданных после Второй мировой войны. Эта машина воплотила в себе лучшие традиции советского танкостроения, заслуженно завоевав любовь и популярность у танкистов многих стран мира. Высокие эксплуатационные и боевые качества, а также удивительная надежность дают возможность поставить Т-72 в один ряд с лучшими отечественными и зарубежными образцами танков. Созданный более трех десятилетий назад, танк Т-72, до сих пор состоит на вооружении многих стран мира.</p>
+                        </div>
+                        <div class="product-info-detail-link"><a href="#" data-text="свернуть">подробнее</a></div>
+                        <dl>
+                            <dt>Страниц</dt>
+                            <dd>69</dd>
+
+                            <dt>Бумага</dt>
+                            <dd>Газетная</dd>
+
+                            <dt>Размеры</dt>
+                            <dd>270x200x3мм</dd>
+
+                            <dt>Год выпуска</dt>
+                            <dd>2015</dd>
+
+                            <dt>Номер журнала</dt>
+                            <dd>22</dd>
+
+                            <dt>Периодичность</dt>
+                            <dd>Один номер в 2 недели</dd>
+
+                            <dt>Месяц</dt>
+                            <dd>Октябрь</dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- product right END -->
+            </div>
+            <!-- product END -->
+
+            <h2>H2 - Таблица</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th style="text-align:center">Значение&nbsp;1</th>
+                        <th style="text-align:center">Значение&nbsp;1</th>
+                        <th style="text-align:center">Значение&nbsp;1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Программа фестиваля разделена на две части: ночь и день.</td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Ночью с 5 на 6 июля одновременно будут задействованы три сцены и площадки. Сумароковская школа изящно вызывает роман.</td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Гекзаметр интуитивно понятен. Даже в этом коротком фрагменте видно, что стилистическая игра точно притягивает жанр, тем не менее узус никак не предполагал здесь родительного падежа.</td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                        <td style="text-align:center"><strong>270x200x3мм</strong></td>
+                    </tr>
+                <tbody>
+            </table>
+
+            <h2>H2 - Форма</h2>
+
+            <div class="form-error">
+                <div class="form-error-title">Ошибка!</div>
+                <div class="form-error-text">Описание ошибки. может быть достаточно длинным.</div>
+            </div>
+
+            <form action="#" method="post">
+
+                <div class="form-row">
+                    <div class="form-label">Служба доставки</div>
+                    <div class="form-field">
+                        <div class="form-radio"><div><input type="radio" name="delivery" value="1" />Самовывоз из нашего офиса (бесплатно)</div></div>
+                        <div class="form-radio"><div><input type="radio" name="delivery" value="2" checked="checked" />Курьером по Москве и не далее 30км от МКАД (500 Р)</div></div>
+                        <div class="form-radio"><div><input type="radio" name="delivery" value="3" />Службой ПониЭкспресс по всей России (от 650 Р)</div></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Ваш точный адрес<span>*</span></div>
+                    <div class="form-field">
+                        <div class="form-input"><input type="text" name="address" value="Москва, Россия, улица Красина, 15с1" class="required" /></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Ваше Имя<span>*</span></div>
+                    <div class="form-field">
+                        <div class="form-input"><input type="text" name="name" value="Иван Петрович Хреново" class="required" /></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Ваш телефон<span>*</span></div>
+                    <div class="form-field">
+                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" placeholder="+7 921 123-45-67" /></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">E-mail<span>*</span></div>
+                    <div class="form-field">
+                        <div class="form-input"><input type="text" name="email" value="" class="required email" placeholder="Ваш e-mail" /></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Комментарий к&nbsp;заказу</div>
+                    <div class="form-field">
+                        <div class="form-textarea"><textarea name="comments" rows="5" cols="5" placeholder="Ваш комментарий"></textarea></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Способ оплаты</div>
+                    <div class="form-field">
+                        <div class="form-radio"><div><input type="radio" name="payment" value="1" checked="checked" />Наличными курьеру при получении</div></div>
+                        <div class="form-radio"><div><input type="radio" name="payment" value="2" />Банковской картой Visa или MasterCard</div></div>
+                        <div class="form-radio"><div><input type="radio" name="payment" value="3" />Яндекс.Деньги</div></div>
+                        <div class="form-radio"><div><input type="radio" name="payment" value="4" />Наличными в банке по квитанции</div></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Опции</div>
+                    <div class="form-field">
+                        <div class="form-field-col">
+                            <div class="form-select">
+                                <select name="list1" data-placeholder="Выберите значение" class="required">
+                                    <option></option>
+                                    <option value="1">+7 921 123-45-67</option>
+                                    <option value="2">+7 921 123-45-68</option>
+                                    <option value="3">+7 921 123-45-69</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-field-col">
+                            <div class="form-select">
+                                <select name="list2">
+                                    <option value="1">+7 921 123-45-67</option>
+                                    <option value="2">+7 921 123-45-68</option>
+                                    <option value="3">+7 921 123-45-69</option>
+                                    <option value="4">+7 921 123-45-70</option>
+                                    <option value="5">+7 921 123-45-71</option>
+                                    <option value="6">+7 921 123-45-72</option>
+                                    <option value="7">+7 921 123-45-73</option>
+                                    <option value="8">+7 921 123-45-74</option>
+                                    <option value="9">+7 921 123-45-75</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Загрузка файла</div>
+                    <div class="form-field">
+                        <div class="form-file">
+                            <div class="form-file-title"></div>
+                            <div class="form-file-input">
+                                <span>Выбрать файл</span>
+                                <input type="file" name="file" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-ctrl">
+                    <div class="form-submit"><input type="submit" value="отправить" class="btn" /></div>
+                    <div class="form-required-text"><strong>*</strong> — Поля, обязательные для заполнения</div>
+                </div>
+
+            </form>
+
+        </div>
+        <!-- content END -->
+
+        <!-- other -->
+        <div class="other">
+            <div class="other-title"><div>Розничная продажа</div></div>
+            <div class="other-list">
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-1.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">69 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Добрые советы №9/2015</a></div>
+                    <div class="rating"><div class="rating-1"></div></div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-2.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">69 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Добрые советы №6/2015</a></div>
+                    <div class="rating"><div class="rating-2"></div></div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-3.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">69 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Добрые советы №5/2015</a></div>
+                    <div class="rating"><div class="rating-3"></div></div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-4.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">69 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Добрые советы №11/2015</a></div>
+                    <div class="rating"><div class="rating-4"></div></div>
+                </div>
+            </div>
+            <a href="windows/other.html" class="btn other-more">Показать еще</a>
+        </div>
+        <!-- other END -->
+
+        <!-- other -->
+        <div class="other other-2">
+            <div class="other-title"><div>Похожие товары</div></div>
+            <div class="other-list">
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-5.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">129 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Ландшафтный дизайн №5/2015</a></div>
+                    <div class="rating"><div class="rating-5"></div></div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-6.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">112 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Ландшафтный дизайн №4/2015</a></div>
+                    <div class="rating"><div style="width:75%"></div></div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-7.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">117 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Ландшафтный дизайн №2/2015</a></div>
+                    <div class="rating"><div class="rating-1"></div></div>
+                </div>
+                <div class="other-item">
+                    <div class="other-item-img"><a href="#"><img src="files/other-8.jpg" alt="" /></a></div>
+                    <div class="other-item-buy">
+                        <div class="other-item-price">107 руб.</div>
+                        <a href="#">Купить</a>
+                    </div>
+                    <div class="other-item-title"><a href="#">Ландшафтный дизайн №1/2015</a></div>
+                    <div class="rating"><div class="rating-1"></div></div>
+                </div>
+            </div>
+            <a href="windows/other.html" class="btn other-more">Показать еще</a>
+        </div>
+        <!-- other END -->
+
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-1">
+                    <div class="footer-title">Новости Periodika.net</div>
+                    <form action="#" method="post">
+                        <div class="footer-subscribe-input"><input type="text" name="email" placeholder="Ваш e-mail" class="required email" /></div>
+                        <div class="footer-subscribe-submit"><input type="submit" value="Подписаться" class="btn" /></div>
+                    </form>
+                    <div class="footer-subscribe-hint"><span>*</span> Получайте обновления и новости свежих изданий</div>
+                    <div class="footer-title">Расскажите друзьям о нас:</div>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="#"><img src="images/sm_f.png" alt="" width="32" height="32" /></a></li>
+                            <li><a href="#"><img src="images/sm_v.png" alt="" width="32" height="32" /></a></li>
+                            <li><a href="#"><img src="images/sm_o.png" alt="" width="32" height="32" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-2">
+                    <div class="footer-title">Как покупать</div>
+                    <ul>
+                        <li><a href="#">Как заказать</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-2">
+                    <div class="footer-title">Помощь</div>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Правила работы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-3">
+                    <script src="//vk.com/js/api/openapi.js?116" type="text/javascript"></script>
+                    <div id="vk_groups" style="height: 216px; width: 260px; background: transparent none repeat scroll 0% 0%;"><iframe width="260" height="200" frameborder="0" name="fXDa537e" src="http://vk.com/widget_community.php?app=0&amp;width=260px&amp;_ver=1&amp;gid=95840632&amp;mode=0&amp;color1=FFFFFF&amp;color2=2B587A&amp;color3=A01949&amp;class_name=&amp;height=216&amp;url=http%3A%2F%2Fperiodika-old.ondev.ru%2Fzhenskie-zhurnaly-kulinariya%2Felle&amp;referrer=http%3A%2F%2Fperiodika-old.ondev.ru%2Fzhenskie-zhurnaly-kulinariya&amp;title=Elle%20-%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%B5%D1%81%D1%81%D1%8B%20Periodika.net&amp;1518625da8d" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 216px;"></iframe></div>
+                    <script type="text/javascript">
+                        VK.Widgets.Group("vk_groups", {mode: 0, width: "260", height: "216", color1: 'FFFFFF', color2: '2B587A', color3: 'A01949'}, 95840632);
+                    </script>
+                </div>
+            </div>
+        </footer>
+
+        <div class="bottom">
+            <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ul>
+			<div>Разработано:<br />ООО&nbsp;«<a href="#">Лаборатория Будущего</a>»</div>
+        </div>
+
+        <div class="payments">
+            <div class="payments-title">Способы оплаты: <img src="images/payment.png" alt="" width="124" height="38" /></div>
+            <div class="payments-text">Подписка на печатные периодические издания, доставка по России в пункты выдачи и почтой, курьерская доставка по Москве. У нас вы можете приобрести в розницу и оформить подписку  на журналы, партворки, коллекционные серии книг от ведущих Издательских домов. Приобрести подписку на деловые журналы ИД "МЦФЭР", "Бератор", "Панорама" и многих других</div>
+        </div>
+
+    </body>
+</html>
