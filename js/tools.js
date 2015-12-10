@@ -1,6 +1,116 @@
+var sliderPeriod    = 5000;
+var sliderTimer     = null;
+
 (function($) {
 
     $(document).ready(function() {
+
+        $('.slider').each(function() {
+            var curSlider = $(this);
+            curSlider.data('curIndex', 0);
+            curSlider.data('disableAnimation', true);
+            curSlider.find('.slider-content li:first').css({'z-index': 2});
+            $('.slider-ctrl a:first').addClass('active');
+            sliderTimer = window.setTimeout(sliderNext, sliderPeriod);
+        });
+
+        function sliderNext() {
+            var curSlider = $('.slider');
+
+            if (curSlider.data('disableAnimation')) {
+                var curIndex = curSlider.data('curIndex');
+                var newIndex = curIndex + 1;
+                if (newIndex >= curSlider.find('.slider-content li').length) {
+                    newIndex = 0;
+                }
+
+                curSlider.data('curIndex', newIndex);
+                curSlider.data('disableAnimation', false);
+
+                curSlider.find('.slider-content li').eq(curIndex).css({'z-index': 2});
+                curSlider.find('.slider-content li').eq(newIndex).css({'z-index': 1}).show();
+
+                curSlider.find('.slider-ctrl a.active').removeClass('active');
+                curSlider.find('.slider-ctrl a').eq(newIndex).addClass('active');
+
+                curSlider.find('.slider-content li').eq(curIndex).fadeOut(function() {
+                    curSlider.data('disableAnimation', true);
+                    sliderTimer = window.setTimeout(sliderNext, sliderPeriod);
+                });
+            }
+        }
+
+        $('.slider').on('click', '.slider-ctrl a', function(e) {
+            if (!$(this).hasClass('active')) {
+                window.clearTimeout(sliderTimer);
+                sliderTimer = null;
+
+                var curSlider = $('.slider');
+                if (curSlider.data('disableAnimation')) {
+                    var curIndex = curSlider.data('curIndex');
+                    var newIndex = $('.slider-ctrl a').index($(this));
+
+                    curSlider.data('curIndex', newIndex);
+                    curSlider.data('disableAnimation', false);
+
+                    curSlider.find('.slider-content li').eq(curIndex).css({'z-index': 2});
+                    curSlider.find('.slider-content li').eq(newIndex).css({'z-index': 1}).show();
+
+                    curSlider.find('.slider-ctrl a.active').removeClass('active');
+                    curSlider.find('.slider-ctrl a').eq(newIndex).addClass('active');
+
+                    curSlider.find('.slider-content li').eq(curIndex).fadeOut(function() {
+                        curSlider.data('disableAnimation', true);
+                        sliderTimer = window.setTimeout(sliderNext, sliderPeriod);
+                    });
+                }
+            }
+
+            e.preventDefault();
+        });
+
+        $('.main-popular .other-list').easyTicker({
+            direction: 		'up',
+            speed: 			'slow',
+            interval: 		4000,
+            height: 		'auto',
+            visible: 		2,
+            mousePause: 	1,
+            controls: {
+                up: '.main-popular-up',
+                down: '.main-popular-down'
+            },
+        });
+
+        $('.owl-carousel').owlCarousel({
+            items :             4,
+            itemsDesktop :      [1300, 4],
+            itemsDesktopSmall : [885, 3],
+            itemsTablet :       [885, 3],
+            itemsTabletSmall :  [650, 2],
+            itemsMobile :       [450, 1],
+            singleItem :        false,
+            itemsScaleUp :      false,
+
+            slideSpeed :        200,
+            paginationSpeed :   800,
+            rewindSpeed :       1000,
+
+            autoPlay :          true,
+            stopOnHover :       true,
+
+            navigation :        false,
+            rewindNav :         true,
+            scrollPerPage :     false,
+
+            pagination :        true,
+            paginationNumbers : false,
+
+            responsive :        true,
+            autoHeight :        false,
+            mouseDrag :         true,
+            touchDrag :         true
+        });
 
         $('input.maskPhone').mask('+7 999 999-99-99');
 
