@@ -168,6 +168,7 @@ var sliderTimer     = null;
             var startFromYear   = Number(curForm.find('.subscribe-start-from').html().split('.')[1]);
             var startToMonth    = Number(curForm.find('.subscribe-start-to').html().split('.')[0]);
             var startToYear     = Number(curForm.find('.subscribe-start-to').html().split('.')[1]);
+            var margin          = Number(curForm.find('.subscribe-min').html());
 
             var rangeFromMonth  = Number(curForm.find('.subscribe-range-from').html().split('.')[0]);
             var rangeFromYear   = Number(curForm.find('.subscribe-range-from').html().split('.')[1]);
@@ -209,7 +210,7 @@ var sliderTimer     = null;
             noUiSlider.create(curForm.find('.subscribe-slider')[0], {
                 start: [curFirst, curLast + 1],
                 step: 1,
-                margin: 1,
+                margin: margin,
                 range: {
                     'min': [curFirst],
                     'max': [curLast + 1]
